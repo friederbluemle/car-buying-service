@@ -4,8 +4,9 @@
   "description": "A sample service to maintain transaction and vehicle records",
   "main": "index.js",
   "scripts": {
-    "test": "npm test",
-    "start": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "npm test"
   },
   "keywords": [
     "electrode"
@@ -13,9 +14,11 @@
   "author": "animesh10",
   "license": "ISC",
   "dependencies": {
-    "hapi": "^16.6.2",
-    "inert": "^4.2.1",
-    "lodash": "^4.17.4",
-    "nodemon": "^1.12.1"
+    "@hapi/hapi": "^20.0.0",
+    "@hapi/inert": "^6.0.2",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
